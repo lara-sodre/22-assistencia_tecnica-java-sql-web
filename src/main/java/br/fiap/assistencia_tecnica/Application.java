@@ -9,7 +9,6 @@ public class Application {
 	public static void main(String[] args) {
 
 		SpringApplication.run(Application.class, args);
-
 	}
 
 	@org.springframework.context.annotation.Bean

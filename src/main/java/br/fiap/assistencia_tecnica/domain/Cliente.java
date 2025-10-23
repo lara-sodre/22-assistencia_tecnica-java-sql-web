@@ -8,7 +8,7 @@ import javax.print.attribute.standard.MediaSize;
 @Table(name = "JAVA_CLIENTE")
 public class Cliente {
 
-    @Id //identifica que é chave primária
+    @Id //identifica chave primária
     @GeneratedValue(strategy = GenerationType.IDENTITY) //como vai ser gerado esse valor
 
     @Column(name = "ID_CLIENTE")

@@ -1,5 +1,6 @@
 package br.fiap.assistencia_tecnica.web.dto;
 
+//@Data - gera get e set automático
 public class ClienteDTO {
 
     private Long id;
