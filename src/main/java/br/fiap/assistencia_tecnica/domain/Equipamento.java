@@ -21,7 +21,7 @@ public class Equipamento {
     @Column(name = "id_equip")
     private Long id_equip;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_cliente", foreignKey = @ForeignKey (name= "FK_EQUIP_CLIENTE")) //indicação de chave estrangeira
     private Cliente id_cliente;
                           //n pode ser null

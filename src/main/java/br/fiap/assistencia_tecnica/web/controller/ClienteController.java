@@ -1,6 +1,7 @@
 package br.fiap.assistencia_tecnica.web.controller;
 
 import br.fiap.assistencia_tecnica.domain.Cliente;
+import br.fiap.assistencia_tecnica.domain.Equipamento;
 import br.fiap.assistencia_tecnica.service.ClienteService;
 import br.fiap.assistencia_tecnica.web.dto.ClienteDTO;
 import org.springframework.stereotype.Service;
@@ -36,4 +37,8 @@ public class ClienteController {
         return service.buscarPorId(id);
     }
 
+    @GetMapping("/{idEquip}/equipamento")
+    public List<Equipamento> listarEquipamentoPorCliente(@PathVariable Long id){
+        return service.listarEquipamentoPorCliente(id);
+    }
 }
